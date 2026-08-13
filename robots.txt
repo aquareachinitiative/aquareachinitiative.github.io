@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://aquareachinitiative.org/sitemap.xml
+
+Sitemap: https://aquareachinitiative.github.io/sitemap.xml
