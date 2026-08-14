@@ -2,167 +2,412 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>AquaReach Journal | AquaReach Initiative</title>
 
 <meta name="description" content="The AquaReach Journal features original research, investigations, reviews, analyses, and evidence-based work.">
 
 <link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* ========================================
+   JOURNAL PAGE
+   ======================================== */
+
+.journal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 55px;
+  margin-bottom: 90px;
+}
+
+/* Research cards */
+
+.journal-card {
+  padding: 48px 52px;
+  margin: 0;
+  border-radius: 18px;
+}
+
+/* Research label */
+
+.journal-card .eyebrow {
+  margin-bottom: 18px;
+}
+
+/* Author */
+
+.journal-author {
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Research title */
+
+.journal-card h3 {
+  margin: 0 0 32px;
+  font-size: 1.55rem;
+  line-height: 1.55;
+  max-width: 850px;
+}
+
+/* Research title link */
+
+.journal-card h3 a {
+  text-decoration: none;
+}
+
+/* Read Research button */
+
+.journal-card .btn {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Journal introduction */
+
+.section-head {
+  margin-bottom: 20px;
+}
+
+.section-head .lead {
+  max-width: 760px;
+  line-height: 1.8;
+}
+
+/* Hero text */
+
+.page-hero p {
+  max-width: 760px;
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 700px) {
+
+  .journal-list {
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .journal-card {
+    padding: 32px 26px;
+    border-radius: 14px;
+  }
+
+  .journal-card .eyebrow {
+    margin-bottom: 14px;
+  }
+
+  .journal-author {
+    margin-bottom: 20px;
+  }
+
+  .journal-card h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 26px;
+  }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
+
+<!-- ========================================
+     HEADER
+     ======================================== -->
+
 <header>
+
 <div class="container nav">
 
 <a class="brand" href="index.html">
-<img src="assets/logo.png" alt="AquaReach Initiative logo">
+
+<img
+src="assets/logo.png"
+alt="AquaReach Initiative logo">
+
 <span>AQUAREACH INITIATIVE</span>
+
 </a>
 
-<button class="menu" aria-label="Open navigation">☰</button>
+
+<button
+class="menu"
+aria-label="Open navigation">
+
+☰
+
+</button>
+
 
 <nav class="links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="research.html">Research</a>
-<a href="journal.html" class="active">Journal</a>
-<a href="donate.html">Donate</a>
-<a href="get-involved.html">Get Involved</a>
-<a href="contact.html">Contact</a>
 
-<a class="nav-cta"
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="research.html">
+Research
+</a>
+
+<a href="journal.html" class="active">
+Journal
+</a>
+
+<a href="donate.html">
+Donate
+</a>
+
+<a href="get-involved.html">
+Get Involved
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+
+<a
+class="nav-cta"
 href="https://www.charitywater.org/aquareach-initiative/more-than-water-1"
 target="_blank"
 rel="noopener">
+
 Donate
+
 </a>
+
 </nav>
 
 </div>
+
 </header>
 
 
+
+<!-- ========================================
+     MAIN
+     ======================================== -->
+
 <main>
 
+
+<!-- PAGE HERO -->
+
 <section class="page-hero">
+
 <div class="container">
 
-<div class="eyebrow">AquaReach Journal</div>
+<div class="eyebrow">
+AquaReach Journal
+</div>
 
-<h1>Research worth sharing.</h1>
+
+<h1>
+Research worth sharing.
+</h1>
+
 
 <p>
-The AquaReach Journal features original research, investigations,
-reviews, analyses, and evidence-based work from students,
-researchers, educators, and community members.
+The AquaReach Journal features original research,
+investigations, reviews, analyses, and evidence-based
+work from students, researchers, educators, and
+community members.
 </p>
 
 </div>
+
 </section>
 
 
+
+<!-- PUBLISHED RESEARCH -->
+
 <section>
+
 <div class="container">
+
 
 <div class="section-head">
 
-<div class="eyebrow">Published Research</div>
+<div class="eyebrow">
+Published Research
+</div>
 
-<h2>Explore the Journal.</h2>
+
+<h2>
+Explore the Journal.
+</h2>
+
 
 <p class="lead">
-Read research and evidence-based work published through the
-AquaReach Journal.
+Read research and evidence-based work published
+through the AquaReach Journal.
 </p>
 
 </div>
+
 
 
 <div class="journal-list">
 
 
-<!-- Research Paper: Transportation -->
+<!-- ========================================
+     RESEARCH PAPER 1
+     ======================================== -->
 
 <article class="journal-card">
 
-<div class="eyebrow">Research</div>
 
-<p class="journal-author">R. Kang</p>
+<div class="eyebrow">
+Research
+</div>
+
+
+<p class="journal-author">
+R. Kang
+</p>
+
 
 <h3>
+
 <a
 href="research/Transportation_Emissions_Sustainable_Future_Kang.pdf"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
+
 Lowering Transportation Emissions for a Sustainable Future
+
 </a>
+
 </h3>
+
 
 <a
 class="btn primary"
 href="research/Transportation_Emissions_Sustainable_Future_Kang.pdf"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
+
 Read Research →
+
 </a>
+
 
 </article>
 
 
-<!-- Research Paper: Global Environmental Protection -->
+
+<!-- ========================================
+     RESEARCH PAPER 2
+     ======================================== -->
 
 <article class="journal-card">
 
-<div class="eyebrow">Research</div>
 
-<p class="journal-author">C. Jeong</p>
+<div class="eyebrow">
+Research
+</div>
+
+
+<p class="journal-author">
+C. Jeong
+</p>
+
 
 <h3>
+
 <a
-href="research/Global_Environmental_Protection_Jeong.pdf"
+href="research/Chaeyoon_Jeong_Environmental_Protection_Proposal.pdf"
 target="_blank"
-rel="noopener">
-Global Environmental Protection: Challenges and Sustainable Solutions
+rel="noopener noreferrer">
+
+Global Environmental Protection:
+Challenges and Sustainable Solutions
+
 </a>
+
 </h3>
+
 
 <a
 class="btn primary"
-href="research/Global_Environmental_Protection_Jeong.pdf"
+href="research/Chaeyoon_Jeong_Environmental_Protection_Proposal.pdf"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
+
 Read Research →
+
 </a>
+
 
 </article>
 
 
-<!-- Research Paper: Global Water Security -->
+
+<!-- ========================================
+     RESEARCH PAPER 3
+     ======================================== -->
 
 <article class="journal-card">
 
-<div class="eyebrow">Research</div>
 
-<p class="journal-author">S. Choi</p>
+<div class="eyebrow">
+Research
+</div>
+
+
+<p class="journal-author">
+S. Choi
+</p>
+
 
 <h3>
+
 <a
 href="research/Global_Water_Security_Scientific_Challenges_Choi.pdf"
 target="_blank"
-rel="noopener">
-Global Water Security: Scientific Challenges, Technological Innovations, and Sustainable Solutions
+rel="noopener noreferrer">
+
+Global Water Security:
+Scientific Challenges, Technological Innovations,
+and Sustainable Solutions
+
 </a>
+
 </h3>
+
 
 <a
 class="btn primary"
 href="research/Global_Water_Security_Scientific_Challenges_Choi.pdf"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
+
 Read Research →
+
 </a>
+
 
 </article>
 
@@ -170,100 +415,173 @@ Read Research →
 </div>
 
 </div>
+
 </section>
+
 
 </main>
 
 
+
+<!-- ========================================
+     FOOTER
+     ======================================== -->
+
 <footer>
+
 <div class="container">
 
+
 <div class="footer-grid">
+
+
+<!-- ABOUT -->
 
 <div>
 
 <div class="footer-brand">
-<img src="assets/logo.png" alt="AquaReach Initiative logo">
-<span>AquaReach Initiative</span>
+
+<img
+src="assets/logo.png"
+alt="AquaReach Initiative logo">
+
+<span>
+AquaReach Initiative
+</span>
+
 </div>
 
+
 <p>
-Educating, engaging, and mobilizing people of all ages around the
-global water crisis, with a focus on empowering younger generations.
+Educating, engaging, and mobilizing people of all
+ages around the global water crisis, with a focus
+on empowering younger generations.
 </p>
 
 </div>
 
 
+
+<!-- EXPLORE -->
+
 <div>
 
-<h4>Explore</h4>
+<h4>
+Explore
+</h4>
+
 
 <div class="footer-links">
 
-<a href="about.html">About</a>
-<a href="research.html">Research</a>
-<a href="journal.html">Journal</a>
-<a href="donate.html">Donate</a>
-<a href="get-involved.html">Get Involved</a>
-<a href="contact.html">Contact</a>
+<a href="about.html">
+About
+</a>
+
+<a href="research.html">
+Research
+</a>
+
+<a href="journal.html">
+Journal
+</a>
+
+<a href="donate.html">
+Donate
+</a>
+
+<a href="get-involved.html">
+Get Involved
+</a>
+
+<a href="contact.html">
+Contact
+</a>
 
 </div>
 
 </div>
 
 
+
+<!-- CONNECT -->
+
 <div>
 
-<h4>Connect</h4>
+<h4>
+Connect
+</h4>
+
 
 <div class="footer-links">
+
 
 <a href="mailto:aquareachinitiative@gmail.com">
 Email
 </a>
 
+
 <a
 href="https://www.instagram.com/aquareachinitiative/"
 target="_blank"
 rel="noopener">
+
 Instagram
+
 </a>
+
 
 <a
 href="https://www.tiktok.com/@aquareachinitiative"
 target="_blank"
 rel="noopener">
+
 TikTok
+
 </a>
+
 
 <a
 href="https://www.charitywater.org/aquareach-initiative/more-than-water-1"
 target="_blank"
 rel="noopener">
+
 charity: water campaign
+
 </a>
 
-</div>
 
 </div>
 
 </div>
 
+
+</div>
+
+
+
+<!-- COPYRIGHT -->
 
 <div class="copyright">
 
-<span>© 2026 AquaReach Initiative</span>
+<span>
+© 2026 AquaReach Initiative
+</span>
 
-<span>Founded in California's South Bay</span>
+<span>
+Founded in California's South Bay
+</span>
 
 </div>
 
+
 </div>
+
 </footer>
+
 
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
