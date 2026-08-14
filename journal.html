@@ -13,77 +13,111 @@
 <style>
 
 /* ========================================
-   JOURNAL PAGE
+   JOURNAL LAYOUT
    ======================================== */
 
 .journal-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  margin-top: 55px;
-  margin-bottom: 90px;
+
+  /* LARGE SPACE BETWEEN PAPERS */
+  gap: 70px;
+
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
-/* Research cards */
+
+/* ========================================
+   RESEARCH CARD
+   ======================================== */
 
 .journal-card {
-  padding: 48px 52px;
+  padding: 52px 58px;
   margin: 0;
-  border-radius: 18px;
+
+  border-radius: 20px;
+
+  /* Give every paper its own visual space */
+  min-height: 250px;
 }
 
-/* Research label */
+
+/* ========================================
+   RESEARCH LABEL
+   ======================================== */
 
 .journal-card .eyebrow {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-/* Author */
+
+/* ========================================
+   AUTHOR
+   ======================================== */
 
 .journal-author {
-  margin: 0 0 24px;
+  margin: 0 0 28px;
+
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Research title */
+
+/* ========================================
+   RESEARCH TITLE
+   ======================================== */
 
 .journal-card h3 {
-  margin: 0 0 32px;
+  margin: 0 0 36px;
+
   font-size: 1.55rem;
-  line-height: 1.55;
+  line-height: 1.6;
+
   max-width: 850px;
 }
 
-/* Research title link */
+
+/* Title link */
 
 .journal-card h3 a {
   text-decoration: none;
 }
 
-/* Read Research button */
+
+/* ========================================
+   READ RESEARCH BUTTON
+   ======================================== */
 
 .journal-card .btn {
   display: inline-block;
+
   margin-top: 4px;
+  padding: 13px 22px;
 }
 
-/* Journal introduction */
+
+/* ========================================
+   JOURNAL INTRO
+   ======================================== */
 
 .section-head {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .section-head .lead {
   max-width: 760px;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
-/* Hero text */
+
+/* ========================================
+   HERO
+   ======================================== */
 
 .page-hero p {
   max-width: 760px;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 
@@ -94,28 +128,33 @@
 @media (max-width: 700px) {
 
   .journal-list {
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    gap: 40px;
+    margin-top: 45px;
+    margin-bottom: 70px;
   }
 
   .journal-card {
-    padding: 32px 26px;
-    border-radius: 14px;
+    padding: 34px 28px;
+    min-height: 0;
+    border-radius: 16px;
   }
 
   .journal-card .eyebrow {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .journal-author {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .journal-card h3 {
     font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: 26px;
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+
+  .journal-card .btn {
+    padding: 12px 18px;
   }
 
 }
@@ -212,7 +251,9 @@ Donate
 <main>
 
 
-<!-- PAGE HERO -->
+<!-- ========================================
+     PAGE HERO
+     ======================================== -->
 
 <section class="page-hero">
 
@@ -241,7 +282,9 @@ community members.
 
 
 
-<!-- PUBLISHED RESEARCH -->
+<!-- ========================================
+     PUBLISHED RESEARCH
+     ======================================== -->
 
 <section>
 
@@ -273,11 +316,10 @@ through the AquaReach Journal.
 
 
 <!-- ========================================
-     RESEARCH PAPER 1
+     PAPER 1
      ======================================== -->
 
 <article class="journal-card">
-
 
 <div class="eyebrow">
 Research
@@ -313,17 +355,15 @@ Read Research →
 
 </a>
 
-
 </article>
 
 
 
 <!-- ========================================
-     RESEARCH PAPER 2
+     PAPER 2
      ======================================== -->
 
 <article class="journal-card">
-
 
 <div class="eyebrow">
 Research
@@ -338,7 +378,7 @@ C. Jeong
 <h3>
 
 <a
-href="research/Chaeyoon_Jeong_Environmental_Protection_Proposal.pdf"
+href="research/Global_Environmental_Protection_Jeong.pdf"
 target="_blank"
 rel="noopener noreferrer">
 
@@ -352,7 +392,7 @@ Challenges and Sustainable Solutions
 
 <a
 class="btn primary"
-href="research/Chaeyoon_Jeong_Environmental_Protection_Proposal.pdf"
+href="research/Global_Environmental_Protection_Jeong.pdf"
 target="_blank"
 rel="noopener noreferrer">
 
@@ -360,17 +400,15 @@ Read Research →
 
 </a>
 
-
 </article>
 
 
 
 <!-- ========================================
-     RESEARCH PAPER 3
+     PAPER 3
      ======================================== -->
 
 <article class="journal-card">
-
 
 <div class="eyebrow">
 Research
@@ -407,7 +445,6 @@ rel="noopener noreferrer">
 Read Research →
 
 </a>
-
 
 </article>
 
@@ -514,7 +551,6 @@ Connect
 
 <div class="footer-links">
 
-
 <a href="mailto:aquareachinitiative@gmail.com">
 Email
 </a>
@@ -548,7 +584,6 @@ rel="noopener">
 charity: water campaign
 
 </a>
-
 
 </div>
 
